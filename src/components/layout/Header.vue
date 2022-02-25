@@ -1,7 +1,15 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="dark">
-      <img src="@/assets/team_logo1.png" />
+      <!-- 이미지에 모달 버튼 넣기 -->
+      <button id="" v-b-modal.modal-1 type="button" class="btn btnEvent">
+        <b-modal id="modal-1" title="HooHa! HooHa!">
+          <img src="@/assets/11.gif" />
+          <p class="my-4">Hello training!</p>
+        </b-modal>
+        <img src="@/assets/team_logo1.png" alt="btnImages" class="btnImages" />
+      </button>
+
       <b-navbar-brand href="#" to="/">Home Training</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
